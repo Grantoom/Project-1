@@ -1,9 +1,13 @@
-const http = require('http');
+const express = require ('express');
 
-const server = http.createServer();
+const app = express();
 
-server.on('request', (req, res) => {
-    res.end('Vsem Zdarova.js');
-});
+const port = 3002;
 
-server.listen(3000, () => console.log('Сервер работает'));
+app.listen(port, () => {
+    console.log("My server")
+})
+
+app.get('/',  (req, res, error) =>{
+    res.send('provet')
+}) 
