@@ -11,3 +11,6 @@ app.listen(port, () => {
 app.get('/',  (req, res, error) =>{
     res.send('provet')
 }) 
+app.get('/kak-dela',  (req, res, error) =>{
+    res.send('provet')
+})
